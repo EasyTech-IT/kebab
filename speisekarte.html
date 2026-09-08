@@ -1,0 +1,890 @@
+﻿<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Speisekarte Cihan-Eck Altenstadt – Döner, Dürüm, Lahmacun, Salat Bowls, Tellergerichte, vegetarische Gerichte, Extras und Getränke."
+    />
+
+    <meta name="theme-color" content="#17110e" />
+
+    <title>Speisekarte | Cihan-Eck</title>
+
+    <!-- =========================================================
+       GOOGLE FONTS
+  ========================================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Ponomar&family=Sansita+Swashed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================================
+       ICONS
+  ========================================================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =========================================================
+       GLOBAL CSS
+  ========================================================= -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- =========================================================
+       MENU PAGE CSS
+  ========================================================= -->
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+
+  <body class="menu-page">
+    <!-- =========================================================
+     HEADER – START
+========================================================= -->
+
+    <header class="site-header" id="top">
+      <!-- TOP INFORMATION BAR -->
+      <div class="meta">
+        <div class="container meta-in">
+          <span>
+            <i class="fas fa-phone"></i>
+            06047 / 54 77
+          </span>
+
+          <span>
+            <i class="fas fa-location-dot"></i>
+            Kirchgasse 2 · 63674 Altenstadt
+          </span>
+
+          <span>
+            <i class="fas fa-shopping-bag"></i>
+            Anruf & Mitnahme
+          </span>
+
+          <a
+            href="https://www.instagram.com/cihan_eck/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Cihan-Eck auf Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- FLOATING NAVIGATION -->
+      <nav class="nav" aria-label="Hauptnavigation">
+        <div class="container nav-in">
+          <!-- BRAND (NUR LOGO) -->
+          <a class="brand" href="#top" aria-label="Cihan-Eck Startseite">
+            <img
+              src="https://res.cloudinary.com/k3cqt6uc/image/upload/v1788876630/brave_screenshot_www.instagram.com-removebg-preview.png"
+              alt="Cihan-Eck Logo"
+            />
+          </a>
+
+          <!-- MOBILE BUTTON -->
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- NAVIGATION -->
+          <div class="nav-links" id="main-navigation">
+            <a href="index.html#spezialitaeten"> Spezialitäten </a>
+
+            <a href="index.html#history"> Historie </a>
+
+            <a href="index.html#drinks"> Getränke </a>
+
+            <a href="index.html#kontakt"> Kontakt </a>
+
+            <a class="nav-cta" href="tel:+4960475477">
+              <i class="fas fa-utensils"></i>
+              Anrufen & abholen
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+     HEADER – END
+========================================================= -->
+
+    <main id="speisekarte">
+      <!-- =========================================================
+     MENU HERO - START
+========================================================= -->
+
+      <section class="menu-hero">
+        <div class="menu-hero-glow menu-hero-glow-one"></div>
+        <div class="menu-hero-glow menu-hero-glow-two"></div>
+
+        <div class="container menu-hero-inner">
+          <div class="menu-kicker">
+            <span class="menu-kicker-line"></span>
+            CIHAN-ECK · ALTENSTADT
+          </div>
+
+          <h1>
+            Unsere
+            <span>Speisekarte.</span>
+          </h1>
+
+          <p>
+            Entdecke unsere Gerichte, stelle deine Auswahl individuell zusammen
+            und behalte den Gesamtpreis jederzeit im Blick.
+          </p>
+
+          <div class="menu-hero-info">
+            <span>
+              <i class="fas fa-phone"></i>
+              Anrufen · Bestellen · Abholen
+            </span>
+
+            <span>
+              <i class="fas fa-circle-check"></i>
+              100 % Kalbfleisch
+            </span>
+
+            <span>
+              <i class="fas fa-utensils"></i>
+              Alle Gerichte individuell
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     MENU HERO - END
+========================================================= -->
+
+      <!-- =========================================================
+     FLOATING BOTTOM CATEGORY BAR - START
+========================================================= -->
+
+      <div class="menu-category-shell">
+        <div class="container">
+          <nav
+            class="menu-category-bar"
+            id="categoryBar"
+            aria-label="Speisekarten Kategorien"
+          >
+            <a class="active" href="#doener">
+              <i class="fas fa-drumstick-bite"></i>
+              <span>Döner</span>
+            </a>
+
+            <a href="#duerum">
+              <i class="fas fa-scroll"></i>
+              <span>Dürüm</span>
+            </a>
+
+            <a href="#lahmacun">
+              <i class="fas fa-pizza-slice"></i>
+              <span>Lahmacun</span>
+            </a>
+
+            <a href="#salate">
+              <i class="fas fa-carrot"></i>
+              <span>Salate</span>
+            </a>
+
+            <a href="#klassiker">
+              <i class="fas fa-leaf"></i>
+              <span>Vegetarisch</span>
+            </a>
+
+            <a href="#boxen">
+              <i class="fas fa-box-open"></i>
+              <span>Dönerbox</span>
+            </a>
+
+            <a href="#teller">
+              <i class="fas fa-utensils"></i>
+              <span>Teller</span>
+            </a>
+
+            <a href="#beilagen">
+              <i class="fas fa-bowl-rice"></i>
+              <span>Beilagen</span>
+            </a>
+
+            <a href="#beilagen">
+              <i class="fas fa-pepper-hot"></i>
+              <span>Extras</span>
+            </a>
+
+            <a href="#getraenke">
+              <i class="fas fa-bottle-water"></i>
+              <span>Getränke</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- =========================================================
+     FLOATING BOTTOM CATEGORY BAR - END
+========================================================= -->
+
+      <!-- =========================================================
+     MENU INTRO - START
+========================================================= -->
+
+      <section class="menu-intro">
+        <div class="container">
+          <div class="menu-intro-card">
+            <div class="menu-intro-icon">
+              <i class="fas fa-sliders"></i>
+            </div>
+
+            <div>
+              <strong> Dein Gericht. Deine Auswahl. </strong>
+
+              <p>
+                Klicke auf ein Gericht, passe Zutaten, Sauce und Extras an und
+                speichere es anschließend in deinem Warenkorb.
+              </p>
+            </div>
+
+            <div class="menu-intro-price">
+              <small> PREIS IMMER SICHTBAR </small>
+
+              <i class="fas fa-calculator"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     MENU INTRO - END
+========================================================= -->
+
+      <!-- =========================================================
+     MAIN TOP 4 CLASSICS (2x2 GRID FOR MOBILE) - START
+========================================================= -->
+      <section class="menu-section top-classics-section" id="klassiker">
+        <div class="container">
+          <div class="menu-section-heading compact-heading">
+            <div>
+              <small>UNSERE HIGHLIGHTS</small>
+              <h2>Die <span>Klassiker.</span></h2>
+            </div>
+            <p>
+              Wähle deinen Favoriten und konfiguriere ihn nach deinem Geschmack
+              (auch vegetarisch/vegan).
+            </p>
+          </div>
+
+          <!-- 2x2 GRID -->
+          <div class="top-classics-grid">
+            <!-- 1. DÖNER -->
+            <button
+              type="button"
+              class="classic-card"
+              id="doener"
+              data-configure="doener-klassisch"
+            >
+              <div class="classic-card-icon">
+                <i class="fas fa-drumstick-bite"></i>
+              </div>
+              <div class="classic-card-info">
+                <h3>Döner Kebab</h3>
+                <span class="classic-card-sub">Klassisch oder Vegetarisch</span>
+              </div>
+              <div class="classic-card-price">
+                <span>ab 10,00 €</span>
+                <i class="fas fa-plus-circle"></i>
+              </div>
+            </button>
+
+            <!-- 2. DÜRÜM -->
+            <button
+              type="button"
+              class="classic-card"
+              id="duerum"
+              data-configure="duerum-klassisch"
+            >
+              <div class="classic-card-icon">
+                <i class="fas fa-scroll"></i>
+              </div>
+              <div class="classic-card-info">
+                <h3>Dürüm Wrap</h3>
+                <span class="classic-card-sub">Frisch gerollt</span>
+              </div>
+              <div class="classic-card-price">
+                <span>ab 9,50 €</span>
+                <i class="fas fa-plus-circle"></i>
+              </div>
+            </button>
+
+            <!-- 3. LAHMACUN -->
+            <button
+              type="button"
+              class="classic-card"
+              id="lahmacun"
+              data-configure="lahmacun-klassisch"
+            >
+              <div class="classic-card-icon">
+                <i class="fas fa-pizza-slice"></i>
+              </div>
+              <div class="classic-card-info">
+                <h3>Lahmacun</h3>
+                <span class="classic-card-sub">Türkische Pizza</span>
+              </div>
+              <div class="classic-card-price">
+                <span>ab 10,50 €</span>
+                <i class="fas fa-plus-circle"></i>
+              </div>
+            </button>
+
+            <!-- 4. SALAT BOWL -->
+            <button
+              type="button"
+              class="classic-card"
+              id="salate"
+              data-configure="salat-doener"
+            >
+              <div class="classic-card-icon">
+                <i class="fas fa-carrot"></i>
+              </div>
+              <div class="classic-card-info">
+                <h3>Salat Bowl</h3>
+                <span class="classic-card-sub">Frisch & Knackig</span>
+              </div>
+              <div class="classic-card-price">
+                <span>ab 9,50 €</span>
+                <i class="fas fa-plus-circle"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     WEITERE KATEGORIEN (WEITER UNTEN)
+========================================================= -->
+
+      <!-- DÖNERBOX -->
+      <section
+        class="menu-section menu-section-alt"
+        id="boxen"
+        data-category-section
+      >
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>02 · DÖNERBOX</small>
+              <h2>Döner <span>Box.</span></h2>
+            </div>
+          </div>
+          <div class="simple-menu-grid">
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="box-pommes"
+            >
+              <span><i class="fas fa-box-open"></i> Dönerbox mit Pommes</span>
+              <strong>8,50 €</strong>
+            </button>
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="box-reis"
+            >
+              <span><i class="fas fa-box-open"></i> Dönerbox mit Reis</span>
+              <strong>8,50 €</strong>
+            </button>
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="box-reis-pommes"
+            >
+              <span
+                ><i class="fas fa-box-open"></i> Dönerbox mit Reis &
+                Pommes</span
+              >
+              <strong>10,00 €</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TELLER -->
+      <section class="menu-section" id="teller" data-category-section>
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>03 · TELLERGERICHTE</small>
+              <h2>Auf dem <span>Teller.</span></h2>
+            </div>
+          </div>
+          <div class="simple-menu-grid">
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="doener-teller"
+            >
+              <span
+                ><i class="fas fa-utensils"></i> Döner Teller (mit Beilage &
+                Salat)</span
+              >
+              <strong>18,90 €</strong>
+            </button>
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="iskender"
+            >
+              <span
+                ><i class="fas fa-fire-flame-curved"></i> Iskender Kebab</span
+              >
+              <strong>16,00 €</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEILAGEN & EXTRAS -->
+      <section
+        class="menu-section menu-section-alt"
+        id="beilagen"
+        data-category-section
+      >
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>04 · BEILAGEN</small>
+              <h2>Knusprige <span>Beilagen.</span></h2>
+            </div>
+          </div>
+          <div class="simple-menu-grid">
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="pommes"
+            >
+              <span><i class="fas fa-bowl-food"></i> Pommes</span>
+              <strong>4,00 €</strong>
+            </button>
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="spicywedges"
+            >
+              <span><i class="fas fa-fire"></i> Spicy Wedges</span>
+              <strong>4,50 €</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- GETRÄNKE -->
+      <section class="menu-section" id="getraenke" data-category-section>
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>05 · GETRÄNKE</small>
+              <h2>Erfrischende <span>Getränke.</span></h2>
+            </div>
+          </div>
+
+          <div class="drink-menu-grid">
+            <button class="drink-item" type="button" data-configure="coca-cola">
+              <span><i class="fas fa-bottle-water"></i> Coca-Cola</span>
+              <strong>3,50 €</strong>
+            </button>
+            <button class="drink-item" type="button" data-configure="cola-zero">
+              <span><i class="fas fa-bottle-water"></i> Cola-Zero</span>
+              <strong>3,50 €</strong>
+            </button>
+            <button
+              class="drink-item"
+              type="button"
+              data-configure="fanta-sprite"
+            >
+              <span><i class="fas fa-bottle-water"></i> Fanta / Sprite</span>
+              <strong>3,50 €</strong>
+            </button>
+            <button class="drink-item" type="button" data-configure="uludag">
+              <span><i class="fas fa-bottle-water"></i> Uludag Limonade</span>
+              <strong>3,50 €</strong>
+            </button>
+            <button class="drink-item" type="button" data-configure="ayran">
+              <span><i class="fas fa-glass-water"></i> Ayran</span>
+              <strong>2,00 €</strong>
+            </button>
+            <button
+              class="drink-item"
+              type="button"
+              data-configure="gerolsteiner"
+            >
+              <span><i class="fas fa-bottle-water"></i> Wasser</span>
+              <strong>4,50 €</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     CALL CTA - START
+========================================================= -->
+
+      <section class="menu-call">
+        <div class="menu-call-glow"></div>
+
+        <div class="container">
+          <div class="menu-call-card">
+            <div>
+              <small> DEINE AUSWAHL FERTIG? </small>
+
+              <h2>
+                Einfach anrufen.
+                <span>Wir kümmern uns um den Rest.</span>
+              </h2>
+
+              <p>
+                Deine gespeicherten Gerichte und der Gesamtpreis bleiben in
+                deinem Warenkorb sichtbar.
+              </p>
+            </div>
+
+            <a class="menu-call-button" href="tel:+4960475477">
+              <i class="fas fa-phone"></i>
+
+              <span>
+                <small> JETZT ANRUFEN </small>
+
+                06047 / 54 77
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     CALL CTA - END
+========================================================= -->
+    </main>
+
+    <!-- =========================================================
+     CONFIGURATOR - START
+========================================================= -->
+
+    <div class="menu-modal" id="menuModal" aria-hidden="true">
+      <div class="menu-modal-backdrop" data-close-modal></div>
+
+      <div
+        class="menu-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="menu-modal-close"
+          type="button"
+          aria-label="Schließen"
+          data-close-modal
+        >
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- MODAL IMAGE -->
+
+        <div class="modal-product-image">
+          <img id="modalImage" src="" alt="" />
+
+          <div class="modal-image-overlay"></div>
+
+          <div class="modal-product-price">
+            <small> AB </small>
+
+            <strong id="modalBasePrice"> 10,00 € </strong>
+          </div>
+        </div>
+
+        <!-- MODAL CONTENT -->
+
+        <div class="modal-content">
+          <div class="modal-heading">
+            <small id="modalCategory"> INDIVIDUELL </small>
+
+            <h2 id="modalTitle">Gericht konfigurieren</h2>
+
+            <p id="modalDescription">
+              Stelle dein Gericht nach deinen Wünschen zusammen.
+            </p>
+          </div>
+
+          <!-- MODAL PRICE -->
+
+          <div class="modal-live-price">
+            <div>
+              <small> AKTUELLER PREIS </small>
+
+              <strong id="modalLivePrice"> 10,00 € </strong>
+            </div>
+
+            <div class="price-calculator-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+          </div>
+
+          <!-- MODAL OPTIONS -->
+
+          <div id="modalOptions"></div>
+
+          <!-- MODAL SUMMARY -->
+
+          <div class="modal-summary">
+            <div class="modal-summary-header">
+              <div>
+                <small> DEINE AUSWAHL </small>
+
+                <strong id="modalSummaryName"> Gericht </strong>
+              </div>
+
+              <span id="modalSummaryPrice"> 10,00 € </span>
+            </div>
+
+            <div class="modal-summary-list" id="modalSummaryList"></div>
+
+            <button class="modal-add-button" type="button" id="addToCart">
+              <span>
+                <i class="fas fa-plus"></i>
+                In Warenkorb speichern
+              </span>
+
+              <strong id="addToCartPrice"> 10,00 € </strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+     CONFIGURATOR - END
+========================================================= -->
+
+    <!-- =========================================================
+     CART - START
+========================================================= -->
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-backdrop" data-close-cart></div>
+
+      <div class="cart-panel">
+        <div class="cart-header">
+          <div>
+            <small> DEINE AUSWAHL </small>
+
+            <h2>Warenkorb</h2>
+          </div>
+
+          <button
+            type="button"
+            class="cart-close"
+            aria-label="Warenkorb schließen"
+            data-close-cart
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="cart-explanation">
+          <i class="fas fa-circle-info"></i>
+
+          <p>
+            Dieser Warenkorb ist <strong>keine Online-Bestellung</strong>. Er
+            hilft dir lediglich dabei, deine Bestellung zusammenzustellen und
+            den Gesamtpreis für deinen Anruf zu sehen.
+          </p>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty-icon">
+            <i class="fas fa-basket-shopping"></i>
+          </div>
+
+          <h3>Noch nichts gespeichert</h3>
+
+          <p>Wähle ein Gericht aus und speichere es hier.</p>
+
+          <button type="button" data-close-cart>Speisekarte ansehen</button>
+        </div>
+
+        <div class="cart-footer">
+          <div class="cart-total">
+            <div>
+              <small> GESAMT </small>
+
+              <strong id="cartTotal"> 0,00 € </strong>
+            </div>
+
+            <span id="cartCount"> 0 Gerichte </span>
+          </div>
+
+          <div class="cart-actions">
+            <button type="button" class="cart-clear" id="clearCart">
+              Leeren
+            </button>
+
+            <a href="tel:+4960475477" class="cart-call" id="cartCall">
+              <i class="fas fa-phone"></i>
+
+              Bestellung anrufen
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- =========================================================
+     CART - END
+========================================================= -->
+
+    <!-- =========================================================
+     FLOATING CART BUTTON - START
+========================================================= -->
+
+    <button
+      class="floating-cart"
+      id="floatingCart"
+      type="button"
+      aria-label="Warenkorb öffnen"
+    >
+      <span class="floating-cart-icon">
+        <i class="fas fa-basket-shopping"></i>
+
+        <b id="floatingCartCount"> 0 </b>
+      </span>
+
+      <span class="floating-cart-text">
+        <small> DEINE AUSWAHL </small>
+
+        <strong id="floatingCartTotal"> 0,00 € </strong>
+      </span>
+
+      <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <!-- =========================================================
+     FLOATING CART BUTTON - END
+========================================================= -->
+
+    <!-- =========================================================
+     MOBILE MENU ACTIONS - START
+========================================================= -->
+
+    <div class="menu-mobile-actions">
+      <a href="#speisekarte">
+        <i class="fas fa-utensils"></i>
+        Karte
+      </a>
+
+      <button type="button" id="mobileCartButton">
+        <span>
+          <i class="fas fa-basket-shopping"></i>
+          <b id="mobileCartCount">0</b>
+        </span>
+
+        Warenkorb
+      </button>
+
+      <a href="tel:+4960475477">
+        <i class="fas fa-phone"></i>
+        Anrufen
+      </a>
+    </div>
+
+    <!-- =========================================================
+     MOBILE MENU ACTIONS - END
+========================================================= -->
+
+    <!-- =========================================================
+     FOOTER - START
+========================================================= -->
+
+    <footer class="footer menu-footer">
+      <div class="container footer-in">
+        <div class="footer-brand">
+          <b> Cihan-Eck </b>
+
+          <p>Döner & Grill · Altenstadt</p>
+
+          <span> Frisch. Herzhaft. Nach deinem Geschmack. </span>
+        </div>
+
+        <div class="footer-column">
+          <strong> Speisekarte </strong>
+
+          <a href="#doener">Döner</a>
+          <a href="#duerum">Dürüm</a>
+          <a href="#lahmacun">Lahmacun</a>
+          <a href="#teller">Teller</a>
+          <a href="#getraenke">Getränke</a>
+        </div>
+
+        <div class="footer-column">
+          <strong> Kontakt </strong>
+
+          <a href="tel:+4960475477">
+            <i class="fas fa-phone"></i>
+            06047 / 54 77
+          </a>
+
+          <span>
+            <i class="fas fa-location-dot"></i>
+            Kirchgasse 2
+          </span>
+
+          <span> 63674 Altenstadt </span>
+        </div>
+
+        <div class="footer-column">
+          <strong> Informationen </strong>
+
+          <a href="index.html"> Startseite </a>
+
+          <a href="mailto:info@cihan-eck.com"> info@cihan-eck.com </a>
+
+          <a
+            href="https://www.instagram.com/cihan_eck/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span> © 2026 Cihan-Eck. Alle Rechte vorbehalten. </span>
+
+        <span> Döner · Grill · Restaurant </span>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+     FOOTER - END
+========================================================= -->
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
