@@ -7,6 +7,94 @@
   // ========================================================= HELPERS - END =========================================================
 
   // =========================================================
+  // OPENING STATUS - START
+  // =========================================================
+
+  const openingSchedule = {
+    0: { open: "11:00", close: "21:30" },
+    1: { open: "11:00", close: "21:30" },
+    2: { open: "11:00", close: "21:30" },
+    3: { open: "11:00", close: "21:30" },
+    4: { open: "11:00", close: "21:30" },
+    5: { open: "11:00", close: "21:30" },
+    6: null,
+  };
+
+  function minutesFromTime(time) {
+    const [hours, minutes] = time.split(":").map(Number);
+    return hours * 60 + minutes;
+  }
+
+  function updateOpeningStatus() {
+    const now = new Date();
+    const schedule = openingSchedule[now.getDay()];
+    const currentMinutes = now.getHours() * 60 + now.getMinutes();
+    const cards = $$("[data-opening-status-card]");
+
+    let state = "closed";
+    let label = "Geschlossen";
+    let detail = "Heute geschlossen";
+
+    if (schedule) {
+      const opening = minutesFromTime(schedule.open);
+      const closing = minutesFromTime(schedule.close);
+      const warningWindow = 30;
+
+      if (currentMinutes >= opening && currentMinutes < closing) {
+        if (closing - currentMinutes <= warningWindow) {
+          state = "warning";
+          label = "Schließt bald";
+          detail = `Heute bis ${schedule.close} Uhr`;
+        } else {
+          state = "open";
+          label = "Geöffnet";
+          detail = `Heute bis ${schedule.close} Uhr`;
+        }
+      } else if (
+        currentMinutes < opening &&
+        opening - currentMinutes <= warningWindow
+      ) {
+        state = "warning";
+        label = "Öffnet bald";
+        detail = `Heute ab ${schedule.open} Uhr`;
+      } else {
+        detail = `Heute ${schedule.open} – ${schedule.close} Uhr`;
+      }
+    } else {
+      detail = "Samstag · Ruhetag";
+    }
+
+    cards.forEach((card) => {
+      card.classList.remove("status-open", "status-closed", "status-warning");
+      card.classList.add(`status-${state}`);
+
+      const labelElement = $(`[data-opening-status-label]`, card);
+      const detailElement = $(`[data-opening-status-detail]`, card);
+      const dot = $(`[data-opening-status-dot]`, card);
+
+      if (labelElement) {
+        labelElement.textContent = label;
+      }
+
+      if (detailElement) {
+        detailElement.textContent = detail;
+      }
+
+      if (dot) {
+        dot.setAttribute("aria-label", label);
+        dot.setAttribute("title", label);
+      }
+    });
+  }
+
+  updateOpeningStatus();
+  window.setInterval(updateOpeningStatus, 60000);
+
+  // =========================================================
+  // OPENING STATUS - END
+  // =========================================================
+
+  // =========================================================
   // NAVIGATION – START
   // =========================================================
 
@@ -127,4 +215,55 @@
     if (event.key === "Escape") close();
   });
   // ========================================================= KEYBOARD EVENTS - END =========================================================
+
+  // =========================================================
+  // LEGAL MODALS - START
+  // =========================================================
+
+  $$("[data-modal]").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const legalModal = document.getElementById(trigger.dataset.modal);
+
+      if (!legalModal) {
+        return;
+      }
+
+      legalModal.classList.add("open");
+      legalModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+    });
+  });
+
+  $$(".legal-modal [data-close-modal]").forEach((element) => {
+    element.addEventListener("click", () => {
+      const legalModal = element.closest(".legal-modal");
+
+      if (!legalModal) {
+        return;
+      }
+
+      legalModal.classList.remove("open");
+      legalModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") {
+      return;
+    }
+
+    $$(".legal-modal.open").forEach((legalModal) => {
+      legalModal.classList.remove("open");
+      legalModal.setAttribute("aria-hidden", "true");
+    });
+
+    if (!$(".legal-modal.open")) {
+      document.body.classList.remove("modal-open");
+    }
+  });
+
+  // =========================================================
+  // LEGAL MODALS - END
+  // =========================================================
 })();

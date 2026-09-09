@@ -21,113 +21,171 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <main id="top">
 <!-- =========================================================
-     HEADER – START
+     HERO SECTION – START
 ========================================================= -->
+<section class="hero">
 
-<header class="site-header" id="top">
-  <!-- TOP INFORMATION BAR -->
-  <div class="meta">
-    <div class="container meta-in">
-      <span>
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <!-- LOGO OBEN LINKS -->
+  <a href="index.html" class="hero-logo">
+    <img
+      src="https://res.cloudinary.com/k3cqt6uc/image/upload/v1788876630/brave_screenshot_www.instagram.com-removebg-preview.png"
+      alt="Cihan Eck"
+    />
+  </a>
+
+  <div class="container hero-in">
+
+    <span class="eyebrow">
+      <i class="fas fa-fire"></i>
+      Seit 1994 · Altenstadt
+    </span>
+
+    <h1>
+      Dein Döner.<br />
+      <span>Deine Wahl.</span>
+    </h1>
+
+    <p>
+      Vier Hauptgerichte. Deine Zutaten, deine Extras.
+      Online zusammenstellen, anrufen, abholen.
+    </p>
+
+    <div class="actions">
+      <a class="btn gold" href="speisekarte.html">
+        <i class="fas fa-utensils"></i>
+        Speisekarte öffnen
+      </a>
+
+      <a class="btn glass" href="tel:+4960475477">
         <i class="fas fa-phone"></i>
-        06047 / 54 77
-      </span>
-
-      <span>
-        <i class="fas fa-location-dot"></i>
-        Kirchgasse 2 · 63674 Altenstadt
-      </span>
-
-      <span>
-        <i class="fas fa-shopping-bag"></i>
-        Anruf & Mitnahme
-      </span>
-
-      <a
-        href="https://www.instagram.com/cihan_eck/"
-        target="_blank"
-        rel="noopener"
-        aria-label="Cihan-Eck auf Instagram"
-      >
-        <i class="fab fa-instagram"></i>
+        Anrufen & abholen
       </a>
     </div>
+
+    <!-- =========================================================
+     GOOGLE RATING TRUST BUTTON – START
+========================================================= -->
+
+<a
+  class="google-trust"
+  href="https://easytechit.de/reviews/index.php?slug=cihan-eck-doener"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Google Bewertungen öffnen"
+>
+
+  <div class="google-score">
+    <strong>4,6</strong>
+    <span>/ 5</span>
   </div>
 
-  <!-- FLOATING NAVIGATION -->
-  <nav class="nav" aria-label="Hauptnavigation">
-    <div class="container nav-in">
-      <!-- BRAND (NUR LOGO) -->
-      <a class="brand" href="#top" aria-label="Cihan-Eck Startseite">
-        <img
-          src="https://res.cloudinary.com/k3cqt6uc/image/upload/v1788876630/brave_screenshot_www.instagram.com-removebg-preview.png"
-          alt="Cihan-Eck Logo"
-        />
-      </a>
+  <div class="google-rating-content">
 
-      <!-- MOBILE BUTTON -->
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="Menü öffnen"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- NAVIGATION -->
-      <div class="nav-links" id="main-navigation">
-        <a href="#spezialitaeten"> Spezialitäten </a>
-
-        <a href="#history"> Historie </a>
-
-        <a href="#drinks"> Getränke </a>
-
-        <a href="#kontakt"> Kontakt </a>
-
-        <a class="nav-cta" href="speisekarte.html">
-          <i class="fas fa-utensils"></i>
-          Speisekarte
-        </a>
-      </div>
+    <div class="google-stars" aria-label="4,6 von 5 Sternen">
+      ★★★★★
     </div>
-  </nav>
-</header>
+
+    <div class="google-rating-text">
+      <strong>+700</strong>
+      <span>Google-Bewertungen</span>
+    </div>
+
+  </div>
+
+  <div class="google-arrow">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </div>
+
+</a>
 
 <!-- =========================================================
-     HEADER – END
+     GOOGLE RATING TRUST BUTTON – END
 ========================================================= -->
-    <main id="top">
-      <!-- ========================================================= HERO SECTION – START ========================================================= -->
-      <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-in">
-          <span class="eyebrow"
-            ><i class="fas fa-fire"></i> Seit 1994 · Altenstadt</span
-          >
-          <h1>Dein Döner.<br /><span>Deine Wahl.</span></h1>
-          <p>
-            Vier Hauptgerichte, individuell zusammengestellt. Zutaten wählen,
-            Extras ergänzen und anschließend telefonisch zur Abholung bestellen.
-          </p>
-          <div class="actions">
-            <a class="btn gold" href="speisekarte.html"
-              ><i class="fas fa-utensils"></i> Speisekarte öffnen</a
-            ><a class="btn glass" href="tel:+4960475477"
-              ><i class="fas fa-phone"></i> Anrufen & abholen</a
-            >
-          </div>
-          <div class="trust">
-            <span><i class="fas fa-check"></i> individuell</span
-            ><span><i class="fas fa-check"></i> Halal</span
-            ><span><i class="fas fa-check"></i> Mitnahme</span>
-          </div>
-        </div>
-      </section>
-      <!-- ========================================================= HERO SECTION – END ========================================================= -->
+
+<!-- =========================================================
+     FLOATING TRUST CHIPS – START
+========================================================= -->
+
+<div class="trust">
+
+    <div class="trust-chip trust-chip-hours" data-opening-status-card>
+    <span class="trust-icon status-dot" data-opening-status-dot></span>
+    <span data-opening-status-label>Öffnungszeiten prüfen</span>
+  </div>
+
+  <div class="trust-chip trust-chip-1">
+    <span class="trust-icon">
+      <i class="fas fa-sliders"></i>
+    </span>
+    <span>Individuell</span>
+  </div>
+
+  <div class="trust-chip trust-chip-2">
+    <span class="trust-icon">
+      <i class="fas fa-certificate"></i>
+    </span>
+    <span>Halal</span>
+  </div>
+
+  <div class="trust-chip trust-chip-3">
+    <span class="trust-icon">
+      <i class="fas fa-shopping-bag"></i>
+    </span>
+    <span>Mitnahme</span>
+  </div>
+
+  <div class="trust-chip trust-chip-4">
+    <span class="trust-icon">
+      <i class="fas fa-money-bill-wave"></i>
+    </span>
+    <span>Bargeld</span>
+  </div>
+
+  <div class="trust-chip trust-chip-5">
+    <span class="trust-icon">
+      <i class="fas fa-credit-card"></i>
+    </span>
+    <span>EC-Karte</span>
+  </div>
+
+  <div class="trust-chip trust-chip-6">
+    <span class="trust-icon">
+      <i class="fas fa-qrcode"></i>
+    </span>
+    <span>QR-Zahlung</span>
+  </div>
+
+  <div class="trust-chip trust-chip-7">
+    <span class="trust-icon">
+      <i class="fas fa-phone"></i>
+    </span>
+    <span>Telefonisch bestellen</span>
+  </div>
+
+  <div class="trust-chip trust-chip-8">
+    <span class="trust-icon">
+      <i class="fas fa-clock"></i>
+    </span>
+    <span>Frisch zubereitet</span>
+  </div>
+
+</div>
+
+<!-- =========================================================
+     FLOATING TRUST CHIPS – END
+========================================================= -->
+</section>
+
+
+<!-- =========================================================
+     HERO SECTION – END
+========================================================= -->
       <!-- =========================================================
      SPECIALTIES SECTION – START
 ========================================================= -->
@@ -146,7 +204,7 @@
           <div class="four-grid">
             <a
               class="food-card"
-              href="speisekarte.html#konfigurator"
+              href="speisekarte.html#doener"
               aria-label="Döner konfigurieren"
             >
               <div class="food-icon">
@@ -164,11 +222,11 @@
 
             <a
               class="food-card"
-              href="speisekarte.html#konfigurator"
+              href="speisekarte.html#duerum"
               aria-label="Dürüm konfigurieren"
             >
               <div class="food-icon">
-                <i class="fas fa-burrito"></i>
+                <i class="fas fa-scroll" aria-hidden="true"></i>
               </div>
 
               <div class="food-card-content">
@@ -182,11 +240,11 @@
 
             <a
               class="food-card"
-              href="speisekarte.html#konfigurator"
+              href="speisekarte.html#lahmacun"
               aria-label="Lahmacun konfigurieren"
             >
               <div class="food-icon">
-                <i class="fas fa-pizza-slice"></i>
+                <i class="fas fa-pizza-slice" aria-hidden="true"></i>
               </div>
 
               <div class="food-card-content">
@@ -200,7 +258,7 @@
 
             <a
               class="food-card"
-              href="speisekarte.html#konfigurator"
+              href="speisekarte.html#salate"
               aria-label="Salat Bowl konfigurieren"
             >
               <div class="food-icon">
@@ -226,75 +284,1032 @@
      SPECIALTIES SECTION – END
 ========================================================= -->
 
-      <!-- ========================================================= ABOUT SECTION – START ========================================================= -->
-      <section class="section">
-        <div class="container about">
-          <div class="about-img"></div>
-          <div>
-            <small class="kicker">Cihan-Eck</small>
-            <h2>Einfach gut. <span>Seit 1994.</span></h2>
-            <p>
-              Tradition und eine moderne Auswahl gehören zusammen. Deshalb
-              bleibt der Charakter von Cihan-Eck erhalten, während die digitale
-              Speisekarte einfacher, klarer und individueller wird.
-            </p>
-            <ul>
-              <li>
-                <i class="fas fa-check"></i> Alle Gerichte auch zum Mitnehmen
-              </li>
-              <li><i class="fas fa-check"></i> Individuell zusammenstellen</li>
-              <li>
-                <i class="fas fa-check"></i> Telefonisch bestellen und abholen
-              </li>
-            </ul>
-            <a class="btn darkbtn" href="tel:+4960475477"
-              ><i class="fas fa-phone"></i> 06047 / 54 77</a
-            >
-          </div>
-        </div>
-      </section>
-      <!-- ========================================================= ABOUT SECTION – END ========================================================= -->
-      <!-- ========================================================= HISTORY SECTION – START ========================================================= -->
-      <section class="section stone" id="history">
-        <div class="container">
-          <div class="heading center">
-            <small>Our Journey · Unsere Historie</small>
-            <h2>Von den Anfängen <span>bis heute.</span></h2>
-            <p>
-              Der bisherige Journey-Gedanke bleibt erhalten, wird aber auf die
-              belegten Informationen reduziert.
-            </p>
-          </div>
-          <div class="timeline">
-            <article>
-              <strong>1994</strong>
-              <div>
-                <small>Der Anfang</small>
-                <h3>Cihan-Eck beginnt seine Geschichte.</h3>
-                <p>
-                  Der bestehende Auftritt nennt „Lecker seit 1994“. Diese
-                  Jahreszahl bleibt als historischer Anker sichtbar.
-                </p>
-              </div>
-            </article>
-            <article>
-              <strong>Heute</strong>
-              <div>
-                <small>Weiterentwicklung</small>
-                <h3>Tradition trifft individuelle Auswahl.</h3>
-                <p>
-                  Die neue Speisekarte verbindet das bekannte Angebot mit einem
-                  modernen Konfigurator und einer klaren Menülogik.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!-- ========================================================= HISTORY SECTION – END ========================================================= -->
-      <!-- =========================================================
-   HISTORY SECTION – END
+<!-- =========================================================
+     GOOGLE BEWERTUNGEN – START
 ========================================================= -->
+
+<section class="google-reviews" id="bewertungen">
+
+  <!-- =========================
+       SECTION HEADER – START
+  ========================== -->
+  <div class="reviews-container">
+
+    <div class="reviews-heading">
+
+      <div class="reviews-heading-top">
+        <span class="google-mark">G</span>
+
+        <div>
+          <span class="reviews-eyebrow">GOOGLE BEWERTUNGEN</span>
+          <h2>Was unsere Gäste sagen</h2>
+        </div>
+      </div>
+
+      <p>
+        Echte Erfahrungen von Gästen, die Cihan-Eck bereits besucht haben.
+      </p>
+
+    </div>
+
+    <!-- =========================
+         REVIEW CAROUSEL – START
+    ========================== -->
+
+    <div class="reviews-carousel-wrapper">
+
+      <button
+        class="reviews-arrow reviews-arrow-prev"
+        type="button"
+        aria-label="Vorherige Bewertung"
+        id="reviewsPrev"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="reviews-carousel" id="reviewsCarousel">
+
+        <!-- REVIEW 1 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              M
+            </div>
+
+            <div class="review-user-info">
+              <strong>Mikail Gezmez</strong>
+              <span>6 Rezensionen</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor 2 Monaten</span>
+          </div>
+
+          <p class="review-text">
+            Super leckerer Döner mit frischen Zutaten und richtig gutem
+            Geschmack. Das Personal war sehr freundlich und der Service
+            schnell. Man merkt, dass hier Wert auf Qualität gelegt wird.
+            Ich komme auf jeden Fall gerne wieder und kann den Laden nur
+            weiterempfehlen!
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 2 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              C
+            </div>
+
+            <div class="review-user-info">
+              <strong>Chris Kutte</strong>
+              <span>Local Guide · 66 Rezensionen · 102 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor 3 Monaten</span>
+          </div>
+
+          <p class="review-text">
+            Mega lecker und Gut. Einer der besten Döner die ich gegessen habe,
+            Geschmacklich einfach anderst als der Standart den man sonst
+            überall bekommt. Ein eigenes gebackenes Brot, leckere Soße und
+            das Fleisch war der Hammer.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 3 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              J
+            </div>
+
+            <div class="review-user-info">
+              <strong>Janina Rückert</strong>
+              <span>3 Rezensionen · 1 Foto</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor 9 Monaten</span>
+          </div>
+
+          <p class="review-text">
+            Qualität, die es sonst kaum zu finden gibt! Für uns der beste
+            Dönerladen im Umkreis, weshalb wir gerne 20 Minuten hin fahren.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 4 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              H
+            </div>
+
+            <div class="review-user-info">
+              <strong>Hannah Anft</strong>
+              <span>5 Rezensionen · 6 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor einem Jahr</span>
+          </div>
+
+          <p class="review-text">
+            Sehr zu empfehlen! Der beste Döner den wir je gegessen haben!
+            Alles aus regionalen Produkten, ein eigenes Brot und mit sehr
+            viel Liebe zubereitet. Qualität die man schmeckt! Wir kommen
+            aufjedenfall wieder!
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 5 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              А
+            </div>
+
+            <div class="review-user-info">
+              <strong>Арташ</strong>
+              <span>2 Rezensionen</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor einem Monat</span>
+          </div>
+
+          <p class="review-text">
+            Ich habe hier etwas gegessen, das ich so vorher noch nie probiert
+            habe und ich war begeistert! Alles war frisch und der Döner
+            wirklich sehr lecker. Ich kann jedem nur empfehlen, hier einmal
+            vorbeizuschauen. Mediterran Döner.
+          </p>
+
+          <div class="review-score-row">
+            <span><strong>Essen:</strong> 5</span>
+            <span><strong>Service:</strong> 5</span>
+            <span><strong>Ambiente:</strong> 5</span>
+          </div>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 6 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              D
+            </div>
+
+            <div class="review-user-info">
+              <strong>Dovile Heinisch</strong>
+              <span>5 Rezensionen · 6 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor einem Jahr</span>
+          </div>
+
+          <p class="review-text">
+            Leckeres Essen vom Chef in Liebe zubereitet. Gemütlich und
+            geschmackvoll eingerichtet. Tolle Terrasse in bester Lage von
+            Altenstadt. Kluge und charmante Chefin.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 7 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              M
+            </div>
+
+            <div class="review-user-info">
+              <strong>Mariusz K.</strong>
+              <span>Local Guide · 17 Rezensionen · 4 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor einem Jahr</span>
+          </div>
+
+          <p class="review-text">
+            Perfekter Döner! Die Qualität der ausgewählten Zutaten ist
+            hervorragend und harmoniert bestens!
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 8 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              K
+            </div>
+
+            <div class="review-user-info">
+              <strong>K W</strong>
+              <span>Local Guide · 99 Rezensionen · 48 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">Bearbeitet · vor einem Jahr</span>
+          </div>
+
+          <p class="review-text">
+            Der beste Döner, esse seit 25 Jahren dort! Edit: mittlerweile
+            esse ich seit 30 Jahren dort und es ist einer der ganz ...
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 9 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              V
+            </div>
+
+            <div class="review-user-info">
+              <strong>Vin Go</strong>
+              <span>Local Guide · 39 Rezensionen · 35 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor einem Jahr</span>
+          </div>
+
+          <p class="review-text">
+            Noch besser als der gehypte Bio-Döner aus Frankfurt. Absolute
+            Spitzenklasse, alles super frisch, regional und auch schöner
+            serviert als an den meisten Orten wo es Döner gibt.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 10 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              E
+            </div>
+
+            <div class="review-user-info">
+              <strong>Ertan Can</strong>
+              <span>Local Guide · 22 Rezensionen · 33 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">Bearbeitet · vor 2 Jahren</span>
+          </div>
+
+          <p class="review-text">
+            Nach der Renovierung in 2022 hat der Laden ein tolles Ambiente.
+            Das Essen war bisher schon sehr gut, mit Spieß in Eigenherstellung
+            und lokalen Produkten, aber jetzt passt einfach alles. Einer der
+            besten Dönerläden im Rhein-Main Gebiet.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 11 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              H
+            </div>
+
+            <div class="review-user-info">
+              <strong>Hansi Vorderseher</strong>
+              <span>Local Guide · 33 Rezensionen · 50 Fotos</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor 2 Jahren</span>
+          </div>
+
+          <p class="review-text">
+            Sehr guter Döner, der Spieß ist selbst gemacht. Genauso die
+            Brötchen. Gute Auswahl an Beilagen. Schön eingerichteter Raum.
+            Für mich stimmt auch die Preis/Leistung. Komme gerne wieder.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+
+        <!-- REVIEW 12 -->
+        <article class="google-review-card">
+
+          <div class="review-user">
+
+            <div class="review-avatar">
+              J
+            </div>
+
+            <div class="review-user-info">
+              <strong>Jasnot „Jasontorben“ MCloydalf</strong>
+              <span>Local Guide · 15 Rezensionen · 1 Foto</span>
+            </div>
+
+            <button class="review-more" type="button" aria-label="Mehr">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+          </div>
+
+          <div class="review-rating-row">
+            <span class="review-stars">★★★★★</span>
+            <span class="review-date">vor 3 Jahren</span>
+          </div>
+
+          <p class="review-text">
+            Sind extra aus Wölfersheim angereist, bisher der beste Döner in
+            der Wetterau, das Brot fluffig, Fleisch saftig, Grillgemüse auf
+            den Punkt, Soße ein Träumchen, eine Symphony der Geschmäcker.
+          </p>
+
+          <div class="review-actions">
+            <button type="button">
+              <i class="far fa-thumbs-up"></i>
+              Gefällt mir
+            </button>
+
+            <button type="button">
+              <i class="fas fa-share-alt"></i>
+              Teilen
+            </button>
+          </div>
+
+        </article>
+
+      </div>
+
+      <button
+        class="reviews-arrow reviews-arrow-next"
+        type="button"
+        aria-label="Nächste Bewertung"
+        id="reviewsNext"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+    <!-- =========================
+         DOTS
+    ========================== -->
+
+    <div class="reviews-dots" id="reviewsDots"></div>
+
+    <!-- =========================
+         GOOGLE CTA
+    ========================== -->
+
+    <div class="reviews-bottom">
+
+      <div class="reviews-bottom-copy">
+        <strong>Auch schon bei uns gewesen?</strong>
+        <span>Wir freuen uns über deine Erfahrung.</span>
+      </div>
+
+      <a
+        href="https://easytechit.de/reviews/index.php?slug=cihan-eck-doener"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="reviews-google-button"
+      >
+        <span class="google-button-mark">G</span>
+        <span>Google Bewertungen ansehen</span>
+        <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     GOOGLE BEWERTUNGEN – END
+========================================================= -->
+
+<!-- =========================================================
+     ABOUT SECTION – START
+========================================================= -->
+
+<section class="section about-story">
+  <div class="container about">
+
+    <div class="about-img">
+      <div class="about-img-content">
+        <span>Seit</span>
+        <strong>1994</strong>
+        <small>Cihan-Eck · Altenstadt</small>
+      </div>
+    </div>
+
+    <div class="about-copy">
+
+      <small class="kicker">
+        Cihan-Eck · Mehr als nur Döner
+      </small>
+
+      <h2>
+        Ein Ort, zu dem man
+        <span>gerne zurückkommt.</span>
+      </h2>
+
+      <p class="about-lead">
+        Seit 1994 steht Cihan-Eck in Altenstadt für gutes Essen,
+        frische Zutaten und echte Gastfreundschaft.
+      </p>
+
+      <p>
+        Ob schneller Döner oder gemeinsames Essen mit Freunden –
+        bei uns steht Qualität und Geschmack im Mittelpunkt.
+      </p>
+
+      <ul class="about-list">
+        <li>
+          <i class="fas fa-check"></i>
+          <span>Seit 1994 in Altenstadt</span>
+        </li>
+
+        <li>
+          <i class="fas fa-check"></i>
+          <span>Dönerspieß aus eigener Herstellung</span>
+        </li>
+
+        <li>
+          <i class="fas fa-check"></i>
+          <span>Frische Zutaten</span>
+        </li>
+
+        <li>
+          <i class="fas fa-check"></i>
+          <span>Individuell nach deinem Geschmack</span>
+        </li>
+      </ul>
+
+      <a class="btn darkbtn" href="tel:+4960475477">
+        <i class="fas fa-phone"></i>
+        06047 / 54 77
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     ABOUT SECTION – END
+========================================================= -->
+
+<!-- =========================================================
+     UNSER DÖNER – START
+========================================================= -->
+
+<section class="section kebab-quality">
+
+  <div class="container">
+
+    <div class="heading center kebab-quality-heading">
+      <small>Cihan-Eck · Unsere Qualität</small>
+
+      <h2>
+        Unser Döner.
+        <span>Unsere Qualität.</span>
+      </h2>
+
+      <p>
+        Gute Zutaten, eigene Rezepte und frische Zubereitung –
+        jeden Tag.
+      </p>
+    </div>
+
+
+    <div class="kebab-quality-grid">
+
+      <!-- FLEISCH -->
+
+      <article class="quality-card">
+
+        <div class="quality-icon">
+          <i class="fas fa-fire"></i>
+        </div>
+
+        <small>Unser Döner</small>
+
+        <h3>
+          100 % geschichtetes
+          <span>Kalbfleisch.</span>
+        </h3>
+
+        <p>
+          Mit eigener Gewürzmischung – ohne Geschmacksverstärker,
+          Konservierungsmittel oder Farbstoffe.
+        </p>
+
+
+      </article>
+
+
+      <!-- BROT -->
+
+      <article class="quality-card">
+
+        <div class="quality-icon">
+          <i class="fas fa-bread-slice"></i>
+        </div>
+
+        <small>Unser Brot</small>
+
+        <h3>
+          Selbst kreiert.
+          <span>Frisch gebacken.</span>
+        </h3>
+
+        <p>
+          Unser Brot wird mit ausgewähltem Mehl
+          aus der Philippi Mühle gebacken.
+        </p>
+
+      </article>
+
+
+      <!-- GEMÜSE -->
+
+      <article class="quality-card">
+
+        <div class="quality-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+
+        <small>Unser Gemüse</small>
+
+        <h3>
+          Frisch.
+          <span>Aus der Region.</span>
+        </h3>
+
+        <p>
+          Wir wählen unser Gemüse sorgfältig aus
+          und verarbeiten es täglich frisch.
+        </p>
+
+      </article>
+
+
+      <!-- VERPACKUNG -->
+
+      <article class="quality-card">
+
+        <div class="quality-icon">
+          <i class="fas fa-recycle"></i>
+        </div>
+
+        <small>Unsere Verpackung</small>
+
+        <h3>
+          Gut verpackt.
+          <span>Bewusst gewählt.</span>
+        </h3>
+
+        <p>
+          Damit unser Essen auch unterwegs gut ankommt,
+          setzen wir auf nachhaltigere Verpackungen.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <!-- CLOSING -->
+
+    <div class="kebab-quality-quote">
+      <p>
+        Mit Liebe gemacht. Seit 1994.
+      </p>
+
+      <span>Cihan-Eck · Altenstadt</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     UNSER DÖNER – END
+========================================================= -->
+
+<!-- =========================================================
+     HISTORY SECTION – START
+========================================================= -->
+
+<section class="section stone history-story" id="history">
+
+  <div class="container">
+
+    <div class="heading center">
+
+      <small>Unsere Geschichte</small>
+
+      <h2>
+        Seit 1994.
+        <span>Mit Herz.</span>
+      </h2>
+
+      <p>
+        Was als Idee begann, ist heute ein fester Teil von Altenstadt.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         INTRO
+    ====================================================== -->
+
+    <div class="history-intro">
+
+      <div class="history-intro-number">
+        <span>Seit</span>
+        <strong>1994</strong>
+      </div>
+
+      <div class="history-intro-text">
+
+        <h3>
+          Eine Idee wird
+          <span>Tradition.</span>
+        </h3>
+
+        <p>
+          Seit 1994 steht Cihan-Eck für frisches Essen,
+          Qualität und persönliche Gastfreundschaft.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TIMELINE
+    ====================================================== -->
+
+    <div class="timeline">
+
+      <article class="timeline-item">
+
+        <div class="timeline-year">
+          <span>01</span>
+          <strong>1994</strong>
+        </div>
+
+        <div class="timeline-content">
+
+          <small>Der Anfang</small>
+
+          <h3>
+            Alles beginnt.
+          </h3>
+
+          <p>
+            Cihan-Eck öffnet in Altenstadt seine Türen.
+            Der Anspruch: gutes Essen und ehrlicher Service.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="timeline-item">
+
+        <div class="timeline-year">
+          <span>02</span>
+          <strong>Über die Jahre</strong>
+        </div>
+
+        <div class="timeline-content">
+
+          <small>Gemeinsam gewachsen</small>
+
+          <h3>
+            Gäste werden Stammgäste.
+          </h3>
+
+          <p>
+            Aus einem Besuch wird Tradition.
+            Viele kommen immer wieder.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="timeline-item">
+
+        <div class="timeline-year">
+          <span>03</span>
+          <strong>Heute</strong>
+        </div>
+
+        <div class="timeline-content">
+
+          <small>Heute</small>
+
+          <h3>
+            Tradition trifft Moderne.
+          </h3>
+
+          <p>
+            Bewährter Geschmack trifft auf neue Möglichkeiten –
+            individuell nach deinem Geschmack.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         CLOSING
+    ====================================================== -->
+
+    <div class="history-closing">
+
+      <span class="history-closing-line"></span>
+
+      <p>
+        <strong>Seit 1994.</strong>
+        Und die Geschichte geht weiter.
+      </p>
+
+      <span class="history-closing-line"></span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     HISTORY SECTION – END
+========================================================= -->
+
       <!-- =========================================================
      MENU & CHOICE SECTION – START
 ========================================================= -->
@@ -394,167 +1409,138 @@
       <!-- =========================================================
      MENU & CHOICE SECTION – END
 ========================================================= -->
-      <!-- ========================================================= DRINKS SECTION – START ========================================================= -->
-      <section class="section stone" id="drinks">
-        <div class="container">
-          <div class="heading">
-            <small>Getränke</small>
-            <h2>Etwas Kaltes <span>dazu?</span></h2>
-            <p>
-              Zwölf Getränkemotive als visuelle Auswahl. Die vollständige
-              Getränkeliste bleibt in der Speisekarte erhalten.
-            </p>
-          </div>
-          <div class="drink-photos">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/844875/pexels-photo-844875.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Coca-Cola"
-              />
-              <figcaption>Coca-Cola</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/4113633/pexels-photo-4113633.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Cola"
-              />
-              <figcaption>Cola · eiskalt</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/4113616/pexels-photo-4113616.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Softdrink"
-              />
-              <figcaption>Softdrinks</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/7001005/pexels-photo-7001005.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Cola auf Eis"
-              />
-              <figcaption>Erfrischung</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/16151001/pexels-photo-16151001.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Mineralwasser"
-              />
-              <figcaption>Mineralwasser</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/30878212/pexels-photo-30878212.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Ayran"
-              />
-              <figcaption>Ayran</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/26648792/pexels-photo-26648792.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Ayran im Restaurant"
-              />
-              <figcaption>Ayran · klassisch</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/12821515/pexels-photo-12821515.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Espresso und Latte"
-              />
-              <figcaption>Kaffee</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/893509/pexels-photo-893509.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Cappuccino"
-              />
-              <figcaption>Cappuccino</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/28098571/pexels-photo-28098571.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Latte Art"
-              />
-              <figcaption>Latte</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/7593823/pexels-photo-7593823.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Espresso"
-              />
-              <figcaption>Espresso</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/18039299/pexels-photo-18039299.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Kaffee"
-              />
-              <figcaption>Kaffeevariationen</figcaption>
-            </figure>
-          </div>
-          <div class="center-action">
-            <a class="btn gold darktext" href="speisekarte.html#getraenke"
-              ><i class="fas fa-glass-water"></i> Alle Getränke</a
-            >
-          </div>
+
+<!-- =========================================================
+     CTA SECTION – START
+     ========================================================= -->
+
+<section class="cta">
+  <div class="container cta-in">
+
+    <div>
+      <small>Anrufen & Abholen</small>
+
+      <h2>
+        Zusammenstellen.
+        Anrufen.
+        Abholen.
+      </h2>
+
+      <p>
+        Einfach telefonisch bestellen und entspannt abholen.
+      </p>
+    </div>
+
+    <a class="btn gold" href="tel:+4960475477">
+      <i class="fas fa-phone"></i>
+      Jetzt anrufen
+    </a>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     CTA SECTION – END
+     ========================================================= -->
+
+
+<!-- =========================================================
+     CONTACT SECTION – START
+     ========================================================= -->
+
+<section class="section" id="kontakt">
+
+  <div class="container contact">
+
+    <div>
+
+      <small class="kicker">Kontakt</small>
+
+      <h2>
+        Wir sehen uns
+        <span>in Altenstadt.</span>
+      </h2>
+
+      <div class="contact-list">
+
+        <a href="tel:+4960475477">
+          <i class="fas fa-phone"></i>
+          <span>
+            <small>Telefon</small>
+            06047 / 54 77
+          </span>
+        </a>
+
+        <a href="mailto:info@cihan-eck.com">
+          <i class="fas fa-envelope"></i>
+          <span>
+            <small>E-Mail</small>
+            info@cihan-eck.com
+          </span>
+        </a>
+
+        <div>
+          <i class="fas fa-location-dot"></i>
+          <span>
+            <small>Adresse</small>
+            Kirchgasse 2 · 63674 Altenstadt
+          </span>
         </div>
-      </section>
-      <!-- ========================================================= DRINKS SECTION – END ========================================================= -->
-      <!-- ========================================================= CTA SECTION – START ========================================================= -->
-      <section class="cta">
-        <div class="container cta-in">
-          <div>
-            <small>ANRUF & MITNAHME</small>
-            <h2>Zusammenstellen. Anrufen. Abholen.</h2>
-            <p>Kein Online-Checkout – einfach telefonisch bestellen.</p>
-          </div>
-          <a class="btn gold" href="tel:+4960475477"
-            ><i class="fas fa-phone"></i> Jetzt anrufen</a
-          >
-        </div>
-      </section>
-      <!-- ========================================================= CTA SECTION – END ========================================================= -->
-      <!-- ========================================================= CONTACT SECTION – START ========================================================= -->
-      <section class="section" id="kontakt">
-        <div class="container contact">
-          <div>
-            <small class="kicker">Kontakt</small>
-            <h2>Wir sehen uns <span>in Altenstadt.</span></h2>
-            <div class="contact-list">
-              <a href="tel:+4960475477"
-                ><i class="fas fa-phone"></i
-                ><span><small>Telefon</small>06047 / 54 77</span></a
-              ><a href="mailto:info@cihan-eck.com"
-                ><i class="fas fa-envelope"></i
-                ><span><small>E-Mail</small>info@cihan-eck.com</span></a
-              >
-              <div>
-                <i class="fas fa-location-dot"></i
-                ><span
-                  ><small>Adresse</small>Kirchgasse 2 · 63674 Altenstadt</span
-                >
-              </div>
-            </div>
-            <a
-              class="btn darkbtn"
-              href="https://www.google.com/maps/search/?api=1&query=Kirchgasse+2+63674+Altenstadt"
-              target="_blank"
-              rel="noopener"
-              ><i class="fas fa-route"></i> Route öffnen</a
-            >
-          </div>
-          <div class="hours">
-            <small>Öffnungszeiten</small>
-            <p><span>Montag – Freitag</span><b>11:00 – 21:30</b></p>
-            <p><span>Samstag</span><b>Ruhetag</b></p>
-            <p><span>Sonntag</span><b>11:00 – 21:30</b></p>
-            <em
-              ><i class="fas fa-info-circle"></i> Alle Gerichte auch zum
-              Mitnehmen.</em
-            >
-          </div>
-        </div>
-      </section>
-      <!-- ========================================================= CONTACT SECTION – END ========================================================= -->
+
+      </div>
+
+      <a
+        class="btn darkbtn"
+        href="https://www.google.com/maps/search/?api=1&query=Kirchgasse+2+63674+Altenstadt"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fas fa-route"></i>
+        Route öffnen
+      </a>
+
+    </div>
+
+
+    <div class="hours">
+
+      <small>Öffnungszeiten</small>
+
+      <div class="opening-status" data-opening-status-card>
+        <span class="status-dot" data-opening-status-dot></span>
+        <strong data-opening-status-label>Öffnungszeiten prüfen</strong>
+        <span data-opening-status-detail></span>
+      </div>
+
+      <p>
+        <span>Montag – Freitag</span>
+        <b>11:00 – 21:30</b>
+      </p>
+
+      <p>
+        <span>Samstag</span>
+        <b>Ruhetag</b>
+      </p>
+
+      <p>
+        <span>Sonntag</span>
+        <b>11:00 – 21:30</b>
+      </p>
+
+      <em>
+        <i class="fas fa-info-circle"></i>
+        Alle Gerichte auch zum Mitnehmen.
+      </em>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     CONTACT SECTION – END
+     ========================================================= -->
     </main>
     <!-- =========================================================
      FOOTER – START
@@ -625,6 +1611,19 @@
           <button type="button" id="cookie-settings">
             Cookie-Einstellungen
           </button>
+        </div>
+
+        <div class="footer-column footer-hours">
+          <strong>Öffnungszeiten</strong>
+
+          <div class="footer-opening-status" data-opening-status-card>
+            <span class="status-dot" data-opening-status-dot></span>
+            <span data-opening-status-label>Öffnungszeiten prüfen</span>
+          </div>
+
+          <span>Mo – Fr · 11:00 – 21:30</span>
+          <span>Samstag · Ruhetag</span>
+          <span>Sonntag · 11:00 – 21:30</span>
         </div>
       </div>
 
@@ -857,11 +1856,35 @@
             Zusatzstoffe enthalten.
           </p>
 
+          <h3>Zusatzstoffe</h3>
+
+          <p>
+            <strong>1</strong> mit Farbstoff · <strong>2</strong> mit
+            Konservierungsmitteln · <strong>3</strong> mit
+            Antioxidationsmitteln · <strong>4</strong> mit Phosphat ·
+            <strong>5</strong> mit Geschmacksverstärkern ·
+            <strong>6</strong> koffeinhaltig · <strong>7</strong> enthält eine
+            Phenylalaninquelle
+          </p>
+
           <h3>Allergene</h3>
 
           <p>
-            Dazu können unter anderem Gluten, Milch, Eier, Senf, Sesam und
-            weitere kennzeichnungspflichtige Stoffe gehören.
+            <strong>a</strong> Gluten · <strong>b</strong> Krebstiere ·
+            <strong>c</strong> Eier · <strong>d</strong> Fisch ·
+            <strong>e</strong> Erdnüsse · <strong>f</strong> Sojabohnen ·
+            <strong>g</strong> Milch · <strong>h</strong> Hülsenfrüchte ·
+            <strong>i</strong> Sellerie · <strong>j</strong> Senf ·
+            <strong>k</strong> Sesamsamen · <strong>l</strong> Schwefeldioxid
+            und Sulfite · <strong>m</strong> Lupinen · <strong>n</strong>
+            Weichtiere
+          </p>
+
+          <h3>Döner-Gewürzmischung</h3>
+
+          <p>
+            Im Döner enthalten: Oregano, Paprika, Chili, Salz, Knoblauch und
+            Zwiebeln.
           </p>
 
           <h3>Wichtiger Hinweis</h3>
@@ -877,8 +1900,9 @@
           </p>
 
           <p class="legal-hint">
-            Die konkrete Allergen- und Zusatzstoffkennzeichnung muss anhand der
-            tatsächlich verwendeten Zutaten erstellt werden.
+            Die Kennzeichnung gilt vorbehaltlich der tatsächlich verwendeten
+            Zutaten und Rezepturen. Bei Fragen sprich uns bitte vor deiner
+            Bestellung an.
           </p>
         </div>
       </div>
@@ -990,8 +2014,26 @@
       </div>
     </div>
     <div class="mobile-actions">
-      <a href="tel:+4960475477"><i class="fas fa-phone"></i>Anrufen</a
-      ><a href="speisekarte.html"><i class="fas fa-utensils"></i>Speisekarte</a>
+      <a class="active" href="#top">
+        <i class="fas fa-house"></i>
+        Home
+      </a>
+      <a href="speisekarte.html">
+        <i class="fas fa-utensils"></i>
+        Karte
+      </a>
+      <a href="speisekarte.html#cart">
+        <i class="fas fa-basket-shopping"></i>
+        Warenkorb
+      </a>
+      <a href="#drinks">
+        <i class="fas fa-glass-water"></i>
+        Getränke
+      </a>
+      <a href="tel:+4960475477">
+        <i class="fas fa-phone"></i>
+        Anrufen
+      </a>
     </div>
     <script src="js/main.js"></script>
   </body>

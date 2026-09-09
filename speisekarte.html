@@ -44,93 +44,22 @@
   </head>
 
   <body class="menu-page">
-    <!-- =========================================================
-     HEADER – START
-========================================================= -->
-
-    <header class="site-header" id="top">
-      <!-- TOP INFORMATION BAR -->
-      <div class="meta">
-        <div class="container meta-in">
-          <span>
-            <i class="fas fa-phone"></i>
-            06047 / 54 77
-          </span>
-
-          <span>
-            <i class="fas fa-location-dot"></i>
-            Kirchgasse 2 · 63674 Altenstadt
-          </span>
-
-          <span>
-            <i class="fas fa-shopping-bag"></i>
-            Anruf & Mitnahme
-          </span>
-
-          <a
-            href="https://www.instagram.com/cihan_eck/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Cihan-Eck auf Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- FLOATING NAVIGATION -->
-      <nav class="nav" aria-label="Hauptnavigation">
-        <div class="container nav-in">
-          <!-- BRAND (NUR LOGO) -->
-          <a class="brand" href="#top" aria-label="Cihan-Eck Startseite">
-            <img
-              src="https://res.cloudinary.com/k3cqt6uc/image/upload/v1788876630/brave_screenshot_www.instagram.com-removebg-preview.png"
-              alt="Cihan-Eck Logo"
-            />
-          </a>
-
-          <!-- MOBILE BUTTON -->
-          <button
-            class="nav-toggle"
-            type="button"
-            aria-label="Menü öffnen"
-            aria-expanded="false"
-            aria-controls="main-navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <!-- NAVIGATION -->
-          <div class="nav-links" id="main-navigation">
-            <a href="index.html#spezialitaeten"> Spezialitäten </a>
-
-            <a href="index.html#history"> Historie </a>
-
-            <a href="index.html#drinks"> Getränke </a>
-
-            <a href="index.html#kontakt"> Kontakt </a>
-
-            <a class="nav-cta" href="tel:+4960475477">
-              <i class="fas fa-utensils"></i>
-              Anrufen & abholen
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- =========================================================
-     HEADER – END
-========================================================= -->
-
     <main id="speisekarte">
-      <!-- =========================================================
-     MENU HERO - START
-========================================================= -->
+      <!-- ===== MENU HERO - START ===== -->
+
+      <!-- LOGO OBEN LINKS -->
 
       <section class="menu-hero">
         <div class="menu-hero-glow menu-hero-glow-one"></div>
         <div class="menu-hero-glow menu-hero-glow-two"></div>
+
+        <!-- LOGO OBEN LINKS -->
+        <a href="index.html" class="hero-logo">
+          <img
+            src="https://res.cloudinary.com/k3cqt6uc/image/upload/v1788876630/brave_screenshot_www.instagram.com-removebg-preview.png"
+            alt="Cihan Eck"
+          />
+        </a>
 
         <div class="container menu-hero-inner">
           <div class="menu-kicker">
@@ -143,37 +72,69 @@
             <span>Speisekarte.</span>
           </h1>
 
-          <p>
-            Entdecke unsere Gerichte, stelle deine Auswahl individuell zusammen
-            und behalte den Gesamtpreis jederzeit im Blick.
+          <p class="menu-hero-text">
+            Frisch zubereitet, individuell zusammengestellt und einfach
+            telefonisch bestellt – entdecke, was Cihan-Eck seit 1994 ausmacht.
           </p>
 
-          <div class="menu-hero-info">
-            <span>
-              <i class="fas fa-phone"></i>
-              Anrufen · Bestellen · Abholen
-            </span>
+          <!-- TRUST / GOOGLE REVIEWS -->
 
-            <span>
-              <i class="fas fa-circle-check"></i>
-              100 % Kalbfleisch
-            </span>
+          <div class="menu-trust">
+            <a
+              class="menu-google-review"
+              href="https://easytechit.de/reviews/index.php?slug=cihan-eck-doener"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="google-icon">
+                <i class="fab fa-google"></i>
+              </div>
 
-            <span>
-              <i class="fas fa-utensils"></i>
-              Alle Gerichte individuell
-            </span>
+              <div class="google-review-content">
+                <div class="google-review-top">
+                  <strong>Google Bewertungen</strong>
+
+                  <span class="google-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+
+                <span class="google-review-link">
+                  Was unsere Gäste sagen
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </span>
+              </div>
+
+              <i class="fas fa-chevron-right google-review-arrow"></i>
+            </a>
+
+            <div class="menu-trust-points">
+              <span>
+                <i class="fas fa-phone"></i>
+                Telefonisch bestellen
+              </span>
+
+              <span>
+                <i class="fas fa-circle-check"></i>
+                100 % geschichtetes Kalbfleisch
+              </span>
+
+              <span>
+                <i class="fas fa-heart"></i>
+                Seit 1994 in Altenstadt
+              </span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- =========================================================
-     MENU HERO - END
-========================================================= -->
+      <!-- ===== MENU HERO - END ===== -->
 
-      <!-- =========================================================
-     FLOATING BOTTOM CATEGORY BAR - START
-========================================================= -->
+      <!-- ===== FLOATING BOTTOM CATEGORY BAR - START ===== -->
 
       <div class="menu-category-shell">
         <div class="container">
@@ -182,27 +143,12 @@
             id="categoryBar"
             aria-label="Speisekarten Kategorien"
           >
-            <a class="active" href="#doener">
+            <a class="active" href="#top-klassiker">
               <i class="fas fa-drumstick-bite"></i>
-              <span>Döner</span>
+              <span>Klassiker</span>
             </a>
 
-            <a href="#duerum">
-              <i class="fas fa-scroll"></i>
-              <span>Dürüm</span>
-            </a>
-
-            <a href="#lahmacun">
-              <i class="fas fa-pizza-slice"></i>
-              <span>Lahmacun</span>
-            </a>
-
-            <a href="#salate">
-              <i class="fas fa-carrot"></i>
-              <span>Salate</span>
-            </a>
-
-            <a href="#klassiker">
+            <a href="#vegetarisch">
               <i class="fas fa-leaf"></i>
               <span>Vegetarisch</span>
             </a>
@@ -222,11 +168,6 @@
               <span>Beilagen</span>
             </a>
 
-            <a href="#beilagen">
-              <i class="fas fa-pepper-hot"></i>
-              <span>Extras</span>
-            </a>
-
             <a href="#getraenke">
               <i class="fas fa-bottle-water"></i>
               <span>Getränke</span>
@@ -235,13 +176,9 @@
         </div>
       </div>
 
-      <!-- =========================================================
-     FLOATING BOTTOM CATEGORY BAR - END
-========================================================= -->
+      <!-- ===== FLOATING BOTTOM CATEGORY BAR - END ===== -->
 
-      <!-- =========================================================
-     MENU INTRO - START
-========================================================= -->
+      <!-- ===== MENU INTRO - START ===== -->
 
       <section class="menu-intro">
         <div class="container">
@@ -268,31 +205,28 @@
         </div>
       </section>
 
-      <!-- =========================================================
-     MENU INTRO - END
-========================================================= -->
+      <!-- ===== MENU INTRO - END ===== -->
 
-      <!-- =========================================================
-     MAIN TOP 4 CLASSICS (2x2 GRID FOR MOBILE) - START
-========================================================= -->
-      <section class="menu-section top-classics-section" id="klassiker">
+      <!-- ===== TOP KLASSIKER - START ===== -->
+      <section
+        class="menu-section top-classics-section"
+        id="top-klassiker"
+        data-category-section
+      >
         <div class="container">
           <div class="menu-section-heading compact-heading">
             <div>
               <small>UNSERE HIGHLIGHTS</small>
               <h2>Die <span>Klassiker.</span></h2>
             </div>
-            <p>
-              Wähle deinen Favoriten und konfiguriere ihn nach deinem Geschmack
-              (auch vegetarisch/vegan).
-            </p>
           </div>
 
           <!-- 2x2 GRID -->
           <div class="top-classics-grid">
             <!-- 1. DÖNER -->
-            <button
-              type="button"
+            <div
+              role="button"
+              tabindex="0"
               class="classic-card"
               id="doener"
               data-configure="doener-klassisch"
@@ -306,13 +240,23 @@
               </div>
               <div class="classic-card-price">
                 <span>ab 10,00 €</span>
-                <i class="fas fa-plus-circle"></i>
+                <span class="classic-card-action"
+                  >Anpassen <i class="fas fa-arrow-right"></i
+                ></span>
               </div>
-            </button>
+              <button
+                type="button"
+                class="classic-card-direct"
+                data-direct-add="doener-klassisch"
+              >
+                <i class="fas fa-plus"></i> In den Warenkorb
+              </button>
+            </div>
 
             <!-- 2. DÜRÜM -->
-            <button
-              type="button"
+            <div
+              role="button"
+              tabindex="0"
               class="classic-card"
               id="duerum"
               data-configure="duerum-klassisch"
@@ -326,13 +270,23 @@
               </div>
               <div class="classic-card-price">
                 <span>ab 9,50 €</span>
-                <i class="fas fa-plus-circle"></i>
+                <span class="classic-card-action"
+                  >Anpassen <i class="fas fa-arrow-right"></i
+                ></span>
               </div>
-            </button>
+              <button
+                type="button"
+                class="classic-card-direct"
+                data-direct-add="duerum-klassisch"
+              >
+                <i class="fas fa-plus"></i> In den Warenkorb
+              </button>
+            </div>
 
             <!-- 3. LAHMACUN -->
-            <button
-              type="button"
+            <div
+              role="button"
+              tabindex="0"
               class="classic-card"
               id="lahmacun"
               data-configure="lahmacun-klassisch"
@@ -346,13 +300,23 @@
               </div>
               <div class="classic-card-price">
                 <span>ab 10,50 €</span>
-                <i class="fas fa-plus-circle"></i>
+                <span class="classic-card-action"
+                  >Anpassen <i class="fas fa-arrow-right"></i
+                ></span>
               </div>
-            </button>
+              <button
+                type="button"
+                class="classic-card-direct"
+                data-direct-add="lahmacun-klassisch"
+              >
+                <i class="fas fa-plus"></i> In den Warenkorb
+              </button>
+            </div>
 
             <!-- 4. SALAT BOWL -->
-            <button
-              type="button"
+            <div
+              role="button"
+              tabindex="0"
               class="classic-card"
               id="salate"
               data-configure="salat-doener"
@@ -366,18 +330,32 @@
               </div>
               <div class="classic-card-price">
                 <span>ab 9,50 €</span>
-                <i class="fas fa-plus-circle"></i>
+                <span class="classic-card-action"
+                  >Anpassen <i class="fas fa-arrow-right"></i
+                ></span>
               </div>
-            </button>
+              <button
+                type="button"
+                class="classic-card-direct"
+                data-direct-add="salat-doener"
+              >
+                <i class="fas fa-plus"></i> In den Warenkorb
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- =========================================================
-     WEITERE KATEGORIEN (WEITER UNTEN)
-========================================================= -->
+      <!-- ===== TOP KLASSIKER - END ===== -->
 
-      <!-- DÖNERBOX -->
+      <!-- =========================================================
+     WEITERE SPEISEN – START
+     ========================================================= -->
+
+      <!-- =========================================================
+     DÖNERBOX
+     ========================================================= -->
+
       <section
         class="menu-section menu-section-alt"
         id="boxen"
@@ -390,39 +368,28 @@
               <h2>Döner <span>Box.</span></h2>
             </div>
           </div>
+
           <div class="simple-menu-grid">
             <button
               class="simple-menu-item clickable-block"
               type="button"
               data-configure="box-pommes"
             >
-              <span><i class="fas fa-box-open"></i> Dönerbox mit Pommes</span>
+              <span class="menu-item-name">
+                <i class="fas fa-box-open"></i>
+                Dönerbox mit Pommes
+              </span>
+
               <strong>8,50 €</strong>
-            </button>
-            <button
-              class="simple-menu-item clickable-block"
-              type="button"
-              data-configure="box-reis"
-            >
-              <span><i class="fas fa-box-open"></i> Dönerbox mit Reis</span>
-              <strong>8,50 €</strong>
-            </button>
-            <button
-              class="simple-menu-item clickable-block"
-              type="button"
-              data-configure="box-reis-pommes"
-            >
-              <span
-                ><i class="fas fa-box-open"></i> Dönerbox mit Reis &
-                Pommes</span
-              >
-              <strong>10,00 €</strong>
             </button>
           </div>
         </div>
       </section>
 
-      <!-- TELLER -->
+      <!-- =========================================================
+     TELLER
+     ========================================================= -->
+
       <section class="menu-section" id="teller" data-category-section>
         <div class="container">
           <div class="menu-section-heading">
@@ -431,116 +398,257 @@
               <h2>Auf dem <span>Teller.</span></h2>
             </div>
           </div>
+
           <div class="simple-menu-grid">
             <button
               class="simple-menu-item clickable-block"
               type="button"
               data-configure="doener-teller"
             >
-              <span
-                ><i class="fas fa-utensils"></i> Döner Teller (mit Beilage &
-                Salat)</span
-              >
+              <span class="menu-item-name">
+                <i class="fas fa-utensils"></i>
+                Döner Teller mit Beilage &amp; Salat
+              </span>
+
               <strong>18,90 €</strong>
             </button>
+
             <button
               class="simple-menu-item clickable-block"
               type="button"
               data-configure="iskender"
             >
-              <span
-                ><i class="fas fa-fire-flame-curved"></i> Iskender Kebab</span
-              >
+              <span class="menu-item-name">
+                <i class="fas fa-fire-flame-curved"></i>
+                Iskender Kebab
+              </span>
+
               <strong>16,00 €</strong>
             </button>
           </div>
         </div>
       </section>
 
-      <!-- BEILAGEN & EXTRAS -->
+      <!-- =========================================================
+     VEGETARISCH
+     ========================================================= -->
+
       <section
-        class="menu-section menu-section-alt"
-        id="beilagen"
+        class="menu-section menu-section-alt menu-section-vegetarian"
+        id="vegetarisch"
         data-category-section
       >
         <div class="container">
           <div class="menu-section-heading">
             <div>
-              <small>04 · BEILAGEN</small>
-              <h2>Knusprige <span>Beilagen.</span></h2>
+              <small>04 · VEGETARISCH</small>
+              <h2>Vegetarische <span>Lieblinge.</span></h2>
             </div>
           </div>
+
           <div class="simple-menu-grid">
             <button
               class="simple-menu-item clickable-block"
               type="button"
-              data-configure="pommes"
+              data-configure="vegetarisch-kaese"
             >
-              <span><i class="fas fa-bowl-food"></i> Pommes</span>
-              <strong>4,00 €</strong>
+              <span class="menu-item-name">
+                <i class="fas fa-leaf"></i>
+                Dürüm mit Käse
+              </span>
+
+              <strong>8,50 €</strong>
             </button>
+
             <button
               class="simple-menu-item clickable-block"
               type="button"
-              data-configure="spicywedges"
+              data-configure="vegetarisch-halloumi"
             >
-              <span><i class="fas fa-fire"></i> Spicy Wedges</span>
-              <strong>4,50 €</strong>
-            </button>
-          </div>
-        </div>
-      </section>
+              <span class="menu-item-name">
+                <i class="fas fa-leaf"></i>
+                Dürüm mit Halloumi
+              </span>
 
-      <!-- GETRÄNKE -->
-      <section class="menu-section" id="getraenke" data-category-section>
-        <div class="container">
-          <div class="menu-section-heading">
-            <div>
-              <small>05 · GETRÄNKE</small>
-              <h2>Erfrischende <span>Getränke.</span></h2>
-            </div>
-          </div>
+              <strong>9,00 €</strong>
+            </button>
 
-          <div class="drink-menu-grid">
-            <button class="drink-item" type="button" data-configure="coca-cola">
-              <span><i class="fas fa-bottle-water"></i> Coca-Cola</span>
-              <strong>3,50 €</strong>
-            </button>
-            <button class="drink-item" type="button" data-configure="cola-zero">
-              <span><i class="fas fa-bottle-water"></i> Cola-Zero</span>
-              <strong>3,50 €</strong>
-            </button>
             <button
-              class="drink-item"
+              class="simple-menu-item clickable-block"
               type="button"
-              data-configure="fanta-sprite"
+              data-configure="vegetarisch-falafel"
             >
-              <span><i class="fas fa-bottle-water"></i> Fanta / Sprite</span>
-              <strong>3,50 €</strong>
+              <span class="menu-item-name">
+                <i class="fas fa-leaf"></i>
+                Dürüm mit Falafel
+              </span>
+
+              <strong>9,50 €</strong>
             </button>
-            <button class="drink-item" type="button" data-configure="uludag">
-              <span><i class="fas fa-bottle-water"></i> Uludag Limonade</span>
-              <strong>3,50 €</strong>
-            </button>
-            <button class="drink-item" type="button" data-configure="ayran">
-              <span><i class="fas fa-glass-water"></i> Ayran</span>
-              <strong>2,00 €</strong>
-            </button>
+
             <button
-              class="drink-item"
+              class="simple-menu-item clickable-block"
               type="button"
-              data-configure="gerolsteiner"
+              data-configure="weichkaese-fladen"
             >
-              <span><i class="fas fa-bottle-water"></i> Wasser</span>
-              <strong>4,50 €</strong>
+              <span class="menu-item-name">
+                <i class="fas fa-cheese"></i>
+                Weichkäse im Fladenbrot
+              </span>
+
+              <strong>8,50 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="halloumi-fladen"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-cheese"></i>
+                Halloumi im Fladenbrot
+              </span>
+
+              <strong>9,00 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="falafel-fladen"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-leaf"></i>
+                Falafel im Fladenbrot
+              </span>
+
+              <strong>9,50 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="sigara-boerek"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-seedling"></i>
+                Sigara Börek
+              </span>
+
+              <strong>5,50 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="ispanak-boerek"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-seedling"></i>
+                Ispanak Börek
+              </span>
+
+              <strong>10,00 €</strong>
             </button>
           </div>
         </div>
       </section>
 
       <!-- =========================================================
-     CALL CTA - START
-========================================================= -->
+     BEILAGEN
+     ========================================================= -->
+
+      <section class="menu-section" id="beilagen" data-category-section>
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>05 · BEILAGEN &amp; EXTRAS</small>
+              <h2>Knusprige <span>Beilagen.</span></h2>
+            </div>
+          </div>
+
+          <div class="simple-menu-grid">
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="pommes"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-bowl-food"></i>
+                Pommes
+              </span>
+
+              <strong>4,00 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="spicywedges"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-fire"></i>
+                Spicy Wedges
+              </span>
+
+              <strong>4,50 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="ketchup"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-droplet"></i>
+                Ketchup
+              </span>
+
+              <strong>0,30 €</strong>
+            </button>
+
+            <button
+              class="simple-menu-item clickable-block"
+              type="button"
+              data-configure="mayonnaise"
+            >
+              <span class="menu-item-name">
+                <i class="fas fa-bowl-food"></i>
+                Mayonnaise
+              </span>
+
+              <strong>0,30 €</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     WEITERE SPEISEN – END
+     ========================================================= -->
+
+      <!-- ===== GETRÄNKE ===== -->
+
+      <section
+        class="menu-section menu-section-alt"
+        id="getraenke"
+        data-category-section
+      >
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <small>06 · GETRÄNKE</small>
+              <h2>Erfrischende <span>Getränke.</span></h2>
+            </div>
+          </div>
+
+          <div class="drink-menu-grid" id="drinkMenuGrid"></div>
+        </div>
+      </section>
+
+      <!-- ===== WEITERE SPEISEN - END ===== -->
+
+      <!-- ===== CALL CTA - START ===== -->
 
       <section class="menu-call">
         <div class="menu-call-glow"></div>
@@ -574,113 +682,159 @@
         </div>
       </section>
 
-      <!-- =========================================================
-     CALL CTA - END
-========================================================= -->
+      <!-- ===== CALL CTA - END ===== -->
     </main>
 
     <!-- =========================================================
-     CONFIGURATOR - START
-========================================================= -->
+     CONFIGURATOR – START
+     ========================================================= -->
 
-    <div class="menu-modal" id="menuModal" aria-hidden="true">
-      <div class="menu-modal-backdrop" data-close-modal></div>
+    <div class="food-configurator" id="menuModal" aria-hidden="true">
+      <div class="food-configurator-backdrop" data-close-modal></div>
 
       <div
-        class="menu-modal-panel"
+        class="food-configurator-panel"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modalTitle"
       >
-        <button
-          class="menu-modal-close"
-          type="button"
-          aria-label="Schließen"
-          data-close-modal
-        >
-          <i class="fas fa-times"></i>
-        </button>
-
-        <!-- MODAL IMAGE -->
-
-        <div class="modal-product-image">
-          <img id="modalImage" src="" alt="" />
-
-          <div class="modal-image-overlay"></div>
-
-          <div class="modal-product-price">
-            <small> AB </small>
-
-            <strong id="modalBasePrice"> 10,00 € </strong>
+        <header class="fc-header">
+          <button
+            class="fc-back"
+            type="button"
+            data-close-modal
+            aria-label="Zurück"
+          >
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <div class="fc-header-center">
+            <span id="modalStickyCategory">INDIVIDUELL</span>
+            <strong id="modalStickyTitle">Gericht</strong>
           </div>
-        </div>
+          <button
+            class="fc-close"
+            type="button"
+            data-close-modal
+            aria-label="Schließen"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </header>
 
-        <!-- MODAL CONTENT -->
-
-        <div class="modal-content">
-          <div class="modal-heading">
-            <small id="modalCategory"> INDIVIDUELL </small>
-
-            <h2 id="modalTitle">Gericht konfigurieren</h2>
-
-            <p id="modalDescription">
-              Stelle dein Gericht nach deinen Wünschen zusammen.
-            </p>
-          </div>
-
-          <!-- MODAL PRICE -->
-
-          <div class="modal-live-price">
-            <div>
-              <small> AKTUELLER PREIS </small>
-
-              <strong id="modalLivePrice"> 10,00 € </strong>
-            </div>
-
-            <div class="price-calculator-icon">
-              <i class="fas fa-calculator"></i>
-            </div>
-          </div>
-
-          <!-- MODAL OPTIONS -->
-
-          <div id="modalOptions"></div>
-
-          <!-- MODAL SUMMARY -->
-
-          <div class="modal-summary">
-            <div class="modal-summary-header">
-              <div>
-                <small> DEINE AUSWAHL </small>
-
-                <strong id="modalSummaryName"> Gericht </strong>
+        <div class="fc-scroll">
+          <section class="fc-product">
+            <div class="fc-product-image">
+              <img id="modalImage" src="" alt="" />
+              <div class="fc-image-gradient"></div>
+              <span class="fc-product-badge" id="modalStatusBadge"
+                >Beliebt</span
+              >
+              <div class="fc-image-price">
+                <small>AB</small><strong id="modalBasePrice">10,00 €</strong>
               </div>
-
-              <span id="modalSummaryPrice"> 10,00 € </span>
             </div>
+            <div class="fc-product-info">
+              <span class="fc-category" id="modalCategory">INDIVIDUELL</span>
+              <h2 id="modalTitle">Gericht konfigurieren</h2>
+              <p id="modalDescription">
+                Stelle dein Gericht nach deinen Wünschen zusammen.
+              </p>
+              <small class="fc-allergen-note" id="modalAllergens">
+                Allergene und Zusatzstoffe bitte telefonisch erfragen.
+              </small>
+              <div class="fc-rating">
+                <span class="fc-stars">★★★★★</span
+                ><strong id="modalRating">4,8</strong
+                ><span>Google Bewertungen</span>
+              </div>
+              <div class="fc-property-chips" id="modalPropertyChips"></div>
+              <span id="modalBadge" hidden></span>
+              <span id="modalReview" hidden></span>
+            </div>
+          </section>
 
-            <div class="modal-summary-list" id="modalSummaryList"></div>
+          <nav class="fc-steps" aria-label="Gericht konfigurieren">
+            <a class="fc-step active" href="#modalOptions"
+              ><span>1</span><strong>Gericht</strong></a
+            >
+            <a class="fc-step" href="#modalOptions"
+              ><span>2</span><strong>Zutaten</strong></a
+            >
+            <a class="fc-step" href="#modalOptions"
+              ><span>3</span><strong>Extras</strong></a
+            >
+          </nav>
 
-            <button class="modal-add-button" type="button" id="addToCart">
-              <span>
-                <i class="fas fa-plus"></i>
-                In Warenkorb speichern
-              </span>
-
-              <strong id="addToCartPrice"> 10,00 € </strong>
-            </button>
-          </div>
+          <main class="fc-content">
+            <div class="fc-live-price">
+              <span>AKTUELLER PREIS</span
+              ><strong id="modalLivePrice" aria-live="polite">10,00 €</strong>
+            </div>
+            <div id="modalOptions"></div>
+            <section
+              class="fc-recommendations"
+              id="modalRecommendationsSection"
+              aria-label="Ähnliche Gerichte"
+            >
+              <div class="fc-section-heading">
+                <div>
+                  <span>NOCH MEHR AUSWAHL</span>
+                  <h3>Passt perfekt dazu</h3>
+                </div>
+              </div>
+              <div
+                class="fc-recommendation-grid"
+                id="modalRecommendations"
+              ></div>
+            </section>
+            <div class="fc-summary">
+              <div class="fc-summary-header">
+                <div>
+                  <span>DEINE AUSWAHL</span
+                  ><strong id="modalSummaryName">Gericht</strong>
+                </div>
+                <strong id="modalSummaryPrice">10,00 €</strong>
+              </div>
+              <div class="fc-summary-list" id="modalSummaryList"></div>
+              <div class="fc-quantity">
+                <span>Anzahl</span>
+                <div>
+                  <button
+                    type="button"
+                    id="decreaseQuantity"
+                    aria-label="Anzahl verringern"
+                  >
+                    −</button
+                  ><strong id="modalQuantity">1</strong
+                  ><button
+                    type="button"
+                    id="increaseQuantity"
+                    aria-label="Anzahl erhöhen"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <button class="fc-cart-button" type="button" id="addToCart">
+                <span><i class="fas fa-shopping-bag"></i> In den Warenkorb</span
+                ><strong id="addToCartPrice">10,00 €</strong>
+              </button>
+              <p
+                class="fc-save-status"
+                id="cartSaveStatus"
+                aria-live="polite"
+              ></p>
+            </div>
+          </main>
         </div>
       </div>
     </div>
 
     <!-- =========================================================
-     CONFIGURATOR - END
-========================================================= -->
+     CONFIGURATOR – END
+     ========================================================= -->
 
-    <!-- =========================================================
-     CART - START
-========================================================= -->
+    <!-- ===== CART - START ===== -->
 
     <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
       <div class="cart-backdrop" data-close-cart></div>
@@ -691,6 +845,8 @@
             <small> DEINE AUSWAHL </small>
 
             <h2>Warenkorb</h2>
+
+            <p class="cart-feedback" id="cartFeedback" aria-live="polite"></p>
           </div>
 
           <button
@@ -753,13 +909,9 @@
       </div>
     </aside>
 
-    <!-- =========================================================
-     CART - END
-========================================================= -->
+    <!-- ===== CART - END ===== -->
 
-    <!-- =========================================================
-     FLOATING CART BUTTON - START
-========================================================= -->
+    <!-- ===== FLOATING CART BUTTON - START ===== -->
 
     <button
       class="floating-cart"
@@ -782,15 +934,15 @@
       <i class="fas fa-arrow-right"></i>
     </button>
 
-    <!-- =========================================================
-     FLOATING CART BUTTON - END
-========================================================= -->
+    <!-- ===== FLOATING CART BUTTON - END ===== -->
 
-    <!-- =========================================================
-     MOBILE MENU ACTIONS - START
-========================================================= -->
+    <!-- ===== MOBILE ACTIONS - START ===== -->
 
     <div class="menu-mobile-actions">
+      <a href="index.html">
+        <i class="fas fa-house"></i>
+        Home
+      </a>
       <a href="#speisekarte">
         <i class="fas fa-utensils"></i>
         Karte
@@ -805,19 +957,20 @@
         Warenkorb
       </button>
 
+      <a href="#getraenke">
+        <i class="fas fa-glass-water"></i>
+        Getränke
+      </a>
+
       <a href="tel:+4960475477">
         <i class="fas fa-phone"></i>
         Anrufen
       </a>
     </div>
 
-    <!-- =========================================================
-     MOBILE MENU ACTIONS - END
-========================================================= -->
+    <!-- ===== MOBILE ACTIONS - END ===== -->
 
-    <!-- =========================================================
-     FOOTER - START
-========================================================= -->
+    <!-- ===== FOOTER - START ===== -->
 
     <footer class="footer menu-footer">
       <div class="container footer-in">
@@ -880,9 +1033,7 @@
       </div>
     </footer>
 
-    <!-- =========================================================
-     FOOTER - END
-========================================================= -->
+    <!-- ===== FOOTER - END ===== -->
 
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
